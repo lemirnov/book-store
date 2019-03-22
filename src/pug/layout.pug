@@ -21,47 +21,39 @@ html(class='page  no-js', lang='ru')
     .page__inner
       .page__content
 
-       header.page-header
-        .page-header_inner
-          a.logo(href='index.html') Book Store
-          p.open-time с 9:00 до 19:00
-          nav.main-nav
-           button.burger.main-nav_burger(aria-label='Показать меню') 
-           span
-           ul.main-nav_list
-            li.main-nav_item
-             a(href='index.html') Книги
-            li.main-nav_item.main-nav_item--active
-             a(href='recomendation.html') Рекомендации
-            li.main-nav_item
-             a(href='contacts.html') Контакты
-            li.main-nav_item.main-nav_item--phone
-             a(href='tel:+7 800 500-50-20') 
-              svg(width='24', hight='24')
-              span.main-nav_phone-number +7 800 500-50-20
-          a.page-header_cart  
-           svg(width='24', hight='24')
-            
-        block content
-          p Cодержимое
+        header.page-header
+          .page-header__inner
+            a.logo(href='index.html') Book Store
+            p.open-time с 9:00 до 19:00
+            nav.main-nav
+              button.burger.main-nav__burger(aria-label='Показать меню') #[span]
+                ul.main-nav__list
+                  li.main-nav-item
+                    a(href='index.html') Книги
+                  li.main-nav_item.main-nav__item--active
+                    a(href='recomendation.html') Рекомендации
+                  li.main-nav__item
+                    a(href='contacts.html') Контакты
+                  li.main-nav__item.main-nav__item--phone
+                    a(href='tel:+7 800 500-50-20')
+                      svg(width='24', height='24')
+                      span.main-nav__phone-number +7 800 500-50-20
+            a.page-header__cart
+              svg(width='24', height='24')
 
-      .page__footer-wrapper
-        footer.page__footer
-         .page__footer_inner
-          a.logo(href='index.html') Book Store
-          p.open-time с 9:00 до 19:00
-          nav.main-nav.main-nav--footer
-           ul.main-nav_list
-            li.main-nav_item
-             a(href='index.html') Книги
-            li.main-nav_item.main-nav_item--active
-             a(href='recomendation.html') Рекомендации
-            li.main-nav_item.main-nav_item--contacts
-             a(href='contacts.html') Контакты
-            li.main-nav_item.main-nav_item--phone
-             a(href='tel:+7 800 500-50-20') 
-              svg(width='24', hight='24')
-              span.main-nav_phone-number +7 800 500-50-20
+    block content
+
+    block footer
+        a.logo(href='index.html') Book Store
+        p.open-time с 9:00 до 19:00
+        nav.main-nav
+          ul.main-nav__list
+            li.main-nav-item
+              a(href='index.html') Книги
+            li.main-nav_item.main-nav__item--active
+              a(href='recomendation.html') Рекомендации
+            li.main-nav__item
+              a(href='contacts.html') Контакты
 
     block page-bottom
       script(src='js/vendors.min.js')

@@ -5,4 +5,66 @@ block meta
   meta(name='description', content='')
 
 block content
-  h1 Заголовок
+  .slider
+    .slider__items
+      .slider__item.slider__item_active
+        p Новое поступление "Симпсоны и их математические приключения"
+        p для поклонников сериала "Симпсоны" и для всех кому интересна математика.
+        a(href='...') Хочу узнать больше о книге
+        img(src='src/img/books/book-simpsony-i-ih-matematicheskie-sekrety.jpg', alt='"Симпсоны и их математические приключения"')
+      .slider__item
+        p Слайд 2
+      .slider__item
+        p Слайд 3
+      .slider__item
+        p Слайд 4
+    a.slider__control.slider__control_prev(href='...')
+    a.slider__control.slider__control_next(href='...')
+
+  .tabs
+    ul.tabs__links
+      li.tabs__link-wrap.tabs__link-wrap--active
+        a.tabs__link(href='...', alt=tab00) Все
+      li.tabs__link-wrap
+        a.tabs__link(href='...', alt=tab01) Маркетинг
+      li.tabs__link-wrap
+        a.tabs__link(href='...', alt=tab02) Научпоп
+      li.tabs__link-wrap
+        a.tabs__link(href='...', alt=tab03) Бизнес
+      li.tabs__link-wrap
+        a.tabs__link(href='...', alt=tab04) Творчество
+      li.tabs__link-wrap
+        a.tabs__link(href='...5', alt=tab05) Бизнес
+      tab00.tabs__contants-item
+        +mini-card('Латеральная логика', 'book.html', 'src\img\books\book-lateralnaya-logika.jpg', 'Головоломный путь к нестандартному решению', '500p')
+      tab01.tabs__content-item
+        +mini-card('Путеводитель по лжи', 'book.html', 'src\img\books\book-putevoditel-po-lzhi.jpg', 'Критическое мышление в эпоху постправды', '500 p')
+      tab02.tabs__content-item
+        +mini-card('Дао физики', 'book.html', 'src\img\books\book-dao-fiziki.jpg', 'Исследование параллелей между современной физикой и восточной философией', '500 p')
+      tab03.tabs__content-item
+        +mini-card('Не очевидно', 'book.html', 'src\img\books\book-ne-ochevidno.jpg', 'Как выявлять тренды раньше других', '500 p')
+
+    .pagination
+      a.pagination__item.pagination__item--active(href='/1') 1
+      a.pagination__item(href='...') 2
+      a.pagination__item(href='...') 3
+      a.pagination__item(href='...') 4
+      a.pagination__item(href='...') 5
+      span.pagination__item ...
+      a.pagination__item(href='...') 10
+
+    .contaner
+      h2 Доставим в любое место
+      p //ну почти в любое
+      img(src='...', alt='ico1')
+      img(src='...', alt='ico2')
+      img(src='...', alt='ico3')
+      img(src='...', alt='ico4')
+
+    .newsbook
+      h1 Наши новинки
+      p Все новинки
+      +mini-card('Латеральная логика', 'book.html', 'src\img\books\book-lateralnaya-logika.jpg', 'Головоломный путь к нестандартному решению', '500p')
+      +mini-card('Путеводитель по лжи', 'book.html', 'src\img\books\book-putevoditel-po-lzhi.jpg', 'Критическое мышление в эпоху постправды', '500 p')
+      +mini-card('Дао физики', 'book.html', 'src\img\books\book-dao-fiziki.jpg', 'Исследование параллелей между современной физикой и восточной философией', '500 p')
+      +mini-card('Не очевидно', 'book.html', 'src\img\books\book-ne-ochevidno.jpg', 'Как выявлять тренды раньше других', '500 p')

@@ -1,3 +1,8 @@
 @import 'variables';
+@import 'mixins';
+
 
 @import 'blocks/page';
+@import 'block/page header';
+@import 'block/page footer';
+@import 'block/pade btn';

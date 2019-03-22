@@ -1,1 +1,39 @@
-//- Примеси
+mixin main-nav-item(selectedID, item, level)
+  -
+    var thisItemClass = 'main-nav__item';
+    var thisLinkClass = 'main-nav__link';
+    if(selectedID == item.id) {
+      thisItemClass += '  main-nav__item--active';
+    }
+    if(item.childs) {
+      thisItemClass += '  main-nav__item--has-child';
+    }
+    if(level > 1) {
+      thisItemClass += '  main-nav__item--lvl-' + level;
+      thisLinkClass += '  main-nav__link--lvl-' + level;
+    }
+
+  li(class= thisItemClass)
+    a(class= thisLinkClass, href=item.url)= item.name
+    block
+
+mixin main-nav-sublist-wrapper(level)
+  -
+    var divClass = 'main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-' + level;
+    var listClass = 'main-nav__list  main-nav__list--lvl-' + level;
+  div(class= divClass)
+    ul(class= listClass)
+      block
+
+mixin mini-card(name, url, imgUrl, descr, price)
+  article.mini-card
+    a.mini-card_inner(href=url)
+      img.mini-card_pict(src=imgUrl, alt=name)
+      h3.mini-card_title= name
+      if descr
+        p.mini-card_descr= descr
+      if price
+        p.mini-card_price 000 $
+
+mixin tabs(props, mods)
+  article.tabs

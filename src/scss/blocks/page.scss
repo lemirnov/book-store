@@ -6,4 +6,8 @@
   &__content {}
 
   &__footer-wrapper {}
+
+  &__title {
+    @include header-2;
+  }
 }

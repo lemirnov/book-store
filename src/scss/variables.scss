@@ -2,15 +2,22 @@ $main-color:          #7dcbcf;
 $warning-color:       #fdc05d;
 
 $gray-light:          #f2f2f2;
+$gray:                #808080;
 $gray-dark:           #231f20;
 
 $text-color:          $gray-dark;
 
 $font-family:         -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-$font-size:           14px;
+$font-size:           16px;
+$font-size-h1:        36px;
+$font-size-h2:        30px;
+$font-size-h3:        24px;
+$font-size-h4:        12px;
 $line-height:         1.4;
 
-$screen-xs:           480px;
+$screen-xs:           320px;
 $screen-sm:           768px;
 $screen-md:           992px;
-$screen-lg:           1200px;
+$screen-lg:           1280px;
+
+$border-radius:       2px;

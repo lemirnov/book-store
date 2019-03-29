@@ -1,18 +1,21 @@
-// .btn {
-//   padding: 6px 20px;
-//   border-radius: $border-radius;
-//   font-family: $font-family;
-//   color: #fff;
-//   backround-color: #000;
-//   text-decoration: none;
-//   border: none;
-//   cursor: pointer;
-//   vertical-align: middle;
-//   user-select: none;
-//   transition: all 0,3s;
-//
-//   &:hover
-//   &:focus {
-//     background-color: pink;
-//   }
-// }
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  border-radius: $border-radius;
+  padding: 6px 20px;
+  font-size: $font-size;
+  font-weight: 400;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+
+
+  &:hover,
+  &:focus {
+    // background-color: pink;
+  }
+}

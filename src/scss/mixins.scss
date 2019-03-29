@@ -1,4 +1,4 @@
-// @mixin header-2() {
-//   margin:0;
-//   font-size: $font-size-md;
-// }
+@mixin header-2($fz: $font-size-md) {
+  margin: 0;
+  font-size: $fz;
+}

@@ -5,4 +5,12 @@ block meta
   meta(name='description', content='')
 
 block content
-  h1 Заголовок
+  //- +mixin book-card(name, url1, url2, url3, imgUrl, autor, descr, numberart, numberstock, namepubl, price, description)
+  .book-block
+    +book-card('Суперпотребители', url1, url2, url3, imgUrl, 'Эдди Юн', 'Кто это и почему они так важны для вашего бизнеса', '1090763', '5', 'Издал', '800 р', 'В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.')
+
+  .book-recomendation
+    +book-recomend('Книги по тематике ', 'Больше книг по тематике')
+
+  .biblio
+    +biblio('')

@@ -87,7 +87,7 @@ function copyJsVendors() {
 }
 
 function copyImages() {
-  return src(dir.src + 'img/**/*.{jpg,jpeg,png,svg,webp,gif}')
+  return src(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}')
     .pipe(dest(dir.build + 'img/'));
 }
 exports.copyImages = copyImages;
@@ -107,7 +107,7 @@ function serve() {
   browserSync.init({
     server: dir.build,
     startPath: 'index.html',
-    //open: false,
+    open: false,
     port: 8080,
   });
   watch([

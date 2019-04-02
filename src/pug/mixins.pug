@@ -1,30 +1,3 @@
-//- mixin main-nav-item(selectedID, item, level)
-//-   -
-//-     var thisItemClass = 'main-nav__item';
-//-     var thisLinkClass = 'main-nav__link';
-//-     if(selectedID == item.id) {
-//-       thisItemClass += '  main-nav__item--active';
-//-     }
-//-     if(item.childs) {
-//-       thisItemClass += '  main-nav__item--has-child';
-//-     }
-//-     if(level > 1) {
-//-       thisItemClass += '  main-nav__item--lvl-' + level;
-//-       thisLinkClass += '  main-nav__link--lvl-' + level;
-//-     }
-//-
-//-   li(class= thisItemClass)
-//-     a(class= thisLinkClass, href=item.url)= item.name
-//-     block
-//-
-//- mixin main-nav-sublist-wrapper(level)
-//-   -
-//-     var divClass = 'main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-' + level;
-//-     var listClass = 'main-nav__list  main-nav__list--lvl-' + level;
-//-   div(class= divClass)
-//-     ul(class= listClass)
-//-       block
-
 mixin mini-card(name, url, imgUrl, descr, price)
   article.mini-card
     a.mini-card__inner(href=url)
@@ -35,12 +8,12 @@ mixin mini-card(name, url, imgUrl, descr, price)
       if price
         p.mini-card__price= price
 
-//- +mini-card('Не очевидно', 'book.html', 'src\img\books\book-ne-ochevidno.jpg', 'Как выявлять тренды раньше других', '500 p')
-
-//- mixin tabs(props, mods)
-//-   article.tabs
-
 mixin book-card(name, url1, url2, url3, imgUrl, autor, descr, numberart, numberstock, namepubl, price, description)
+  -
+    // name =
+
+
+
   article.book-card
     .book-card__preview
       img.book-card__preview(src=url1, alt=name)
@@ -90,18 +63,19 @@ mixin book-recomend(name, descr)
   article.book-recomend
     h3.book-recomend__text= name
     p.book-recomend__text= descr
+    //
     .book-recomend__item
-      +mini-card('Латеральная логика', 'book.html', 'src\img\books\book-lateralnaya-logika.jpg', 'Головоломный путь к нестандартному решению')
+      +mini-card('Латеральная логика', 'book.html', 'img/books/book-lateralnaya-logika.jpg', 'Головоломный путь к нестандартному решению', '500p')
     .book-recomend__item
-      +mini-card('Путеводитель по лжи', 'book.html', 'src\img\books\book-putevoditel-po-lzhi.jpg', 'Критическое мышление в эпоху постправды')
+      +mini-card('Путеводитель по лжи', 'book.html', 'img/books/book-putevoditel-po-lzhi.jpg', 'Критическое мышление в эпоху постправды', '500 p')
     .book-recomend__item
-      +mini-card('Дао физики', 'book.html', 'src\img\books\book-dao-fiziki.jpg', 'Исследование параллелей между современной физикой и восточной философией')
+      +mini-card('Дао физики', 'book.html', 'img/books/book-dao-fiziki.jpg', 'Исследование параллелей между современной физикой и восточной философией', '500 p')
     .book-recomend__item
-      +mini-card('Не очевидно', 'book.html', 'src\img\books\book-ne-ochevidno.jpg', 'Как выявлять тренды раньше других')
+      +mini-card('Не очевидно', 'book.html', 'img/books/book-ne-ochevidno.jpg', 'Как выявлять тренды раньше других', '500 p')
 
-mixin biblio(url)
-  article.biblio
-    a.biblio__inner(href=url)
-      img.biblio(src='', alt='')
-      h2.biblio Мы открыли для вас уютную библиотеку
-      p.biblio Приходите к нам по адресу Никитинская 10, каждый день с 12:00 до 18:00
+mixin slider(text, descr, more, imgUrl)
+  article.slider
+    p.slider__text= text
+    h2.slider__descr= descr
+    a.slider__more(href=url)
+    img.slider(src= imgUrl, alt='')

@@ -14,6 +14,3 @@ build/
 ex_files
 Thumbs.db
 __MACOSX/
-*.html
-build/
-src/scss/blocks/

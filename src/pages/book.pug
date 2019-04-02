@@ -1,5 +1,8 @@
 extends ../pug/layout.pug
 
+//- -
+//-  var title = 'book'
+
 block meta
   title Книга
   meta(name='description', content='')
@@ -10,7 +13,9 @@ block content
     +book-card('Суперпотребители', url1, url2, url3, imgUrl, 'Эдди Юн', 'Кто это и почему они так важны для вашего бизнеса', '1090763', '5', 'Издал', '800 р', 'В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.')
 
   .book-recomendation
-    +book-recomend('Книги по тематике ', 'Больше книг по тематике')
+    if title === book
+      //- include ../book-recomend.pug
+      +book-recomend('Книги по тематике ', 'Больше книг по тематике')
 
   .biblio
-    +biblio('')
+    include ../blocks/biblio/biblo.pug

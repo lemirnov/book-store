@@ -1,0 +1,21 @@
+header.page-header
+  .page-header__inner
+    //- один блок
+    a.logo(href='/') Book Store
+    p.open-time с 9:00 до 19:00
+    //- другой блок
+    nav.main-nav
+      button.burger.main-nav__burger(aria-label='Показать меню') #[span]
+      ul.main-nav__list
+        li.main-nav__item
+          a(href='book.html') Книги
+        li.main-nav__item.main-nav__item--active
+          a(href='recomendation.html') Рекомендации
+        li.main-nav__item
+          a(href='contacts.html') Контакты
+        li.main-nav__item.main-nav__item--phone
+          a(href='tel:+78005008020')
+            svg(width='24', height='24')
+            span.main-nav__phone-number +7 800 500-80-20
+    a.page-header__cart
+      svg(width='24', height='24')

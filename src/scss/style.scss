@@ -1,12 +1,13 @@
 @import 'variables';
 @import 'mixins';
 
-// @import 'blocks/page';
-// @import 'blocks/page-header';
-// @import 'blocks/page-footer';
-@import 'blocks/btn';
-// @import './src/blocks/slider/slider.scss';
-@import 'blocks/form';
-@import 'blocks/field-text';
-@import 'blocks/fiel-checkbox';
-@import 'blocks/field-action';
+@import '../blocks/page';
+@import '../blocks/page-header/page-header';
+@import '../blocks/page-footer';
+@import '../blocks/btn';
+@import '../blocks/slider/slider.scss';
+@import '../blocks/form';
+@import '../blocks/field-text';
+@import '../blocks/field-checkbox';
+@import '../blocks/field-action';
+@import '../blocks/arrow';

@@ -19,6 +19,8 @@ const concat = require('gulp-concat');
 const pug = require('gulp-pug');
 const prettyHtml = require('gulp-pretty-html');
 const replace = require('gulp-replace');
+const ghPages = require('gh-pages');
+const path = require('path');
 
 function compilePug() {
   return src(dir.src + 'pages/**/*.pug')
@@ -41,6 +43,11 @@ function compilePug() {
     .pipe(dest(dir.build));
 }
 exports.compilePug = compilePug;
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 function compileStyles() {
   return src(dir.src + 'scss/style.scss')

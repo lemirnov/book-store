@@ -21,6 +21,33 @@ const prettyHtml = require('gulp-pretty-html');
 const replace = require('gulp-replace');
 const ghPages = require('gh-pages');
 const path = require('path');
+const responsive = require('gulp-responsive');
+
+function imagesConvertToJPG() {
+  return src('src/img/booksall/*.png')
+    .pipe(responsive({
+      '*.png': {},
+    },{
+      format: 'jpg',
+      quality: 75,
+      progressive: true,
+    }))
+    .pipe(dest('src/img/booksall/'));
+}
+exports.imagesConvertToJPG = imagesConvertToJPG;
+
+function imagesConvertToWebp() {
+  return src('src/img/booksall/*.png')
+    .pipe(responsive({
+      '*.png': {},
+    },{
+      format: 'webp',
+      quality: 75,
+      progressive: true,
+    }))
+    .pipe(dest('src/img/booksall/'));
+}
+exports.imagesConvertToWebp = imagesConvertToWebp;
 
 function compilePug() {
   return src(dir.src + 'pages/**/*.pug')

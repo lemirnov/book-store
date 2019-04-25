@@ -1,0 +1,15 @@
+<svg id="icon_box" xmlns="http://www.w3.org/2000/svg" width="60" height="44" viewBox="0 0 60 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d7569c;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_4" data-name="Прямоугольник 4" class="cls-1" d="M744,2501h46a2,2,0,0,1,2,2v28a2,2,0,0,1-2,2H744a2,2,0,0,1-2-2v-28A2,2,0,0,1,744,2501Zm-3-10h54a2,2,0,0,1,2,2v8a2,2,0,0,1-2,2H741a2,2,0,0,1-2-2v-8A2,2,0,0,1,741,2491Z" transform="translate(-738 -2490)"/>
+  <path id="Прямоугольник_5" data-name="Прямоугольник 5" class="cls-1" d="M748,2501h11a1,1,0,0,1,0,2H748A1,1,0,0,1,748,2501Zm27,0h11a1,1,0,0,1,0,2H775A1,1,0,0,1,775,2501Z" transform="translate(-738 -2490)"/>
+  <path id="Прямоугольник_6" data-name="Прямоугольник 6" class="cls-1" d="M758,2491h18v29s-8-5.12-8-5c0,0.08-10,5-10,5v-29Z" transform="translate(-738 -2490)"/>
+</svg>

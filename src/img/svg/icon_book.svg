@@ -1,0 +1,21 @@
+<svg id="icon_book" xmlns="http://www.w3.org/2000/svg" width="52" height="42" viewBox="0 0 52 42">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #d7569c;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_3" data-name="Прямоугольник 3" class="cls-1" d="M467,2528v-35a15.756,15.756,0,0,1,12-2c9.437,2.07,14-3,14-3v36s-5.1,3.56-14,1C472.349,2523.08,467,2528,467,2528Z" transform="translate(-442 -2487)"/>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M469,2528v-35a15.756,15.756,0,0,0-12-2c-9.437,2.07-14-3-14-3v36s5.1,3.56,14,1C463.651,2523.08,469,2528,469,2528Z" transform="translate(-442 -2487)"/>
+  <rect id="Прямоугольник_10_копия" data-name="Прямоугольник 10 копия" class="cls-2" x="7" y="16" width="14" height="2" rx="1" ry="1"/>
+  <rect id="Прямоугольник_10_копия_2" data-name="Прямоугольник 10 копия 2" class="cls-2" x="10" y="22" width="8" height="2" rx="1" ry="1"/>
+  <rect id="Прямоугольник_10_копия_3" data-name="Прямоугольник 10 копия 3" class="cls-2" x="31" y="16" width="14" height="2" rx="1" ry="1"/>
+  <rect id="Прямоугольник_10_копия_3-2" data-name="Прямоугольник 10 копия 3" class="cls-2" x="34" y="22" width="7" height="2" rx="1" ry="1"/>
+</svg>

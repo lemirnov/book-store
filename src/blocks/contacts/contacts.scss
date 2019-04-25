@@ -1,0 +1,19 @@
+.contacts__map {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__title {
+    margin:0 40px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px;
+  }
+
+  &__block-item {
+    margin-right: 75px;
+    margin-left: -15px;
+  }
+}

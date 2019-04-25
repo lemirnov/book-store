@@ -1,159 +1,85 @@
-// .page-header {
-//   width: 100%;
+.page-header {
+  display: block;
+  background-color: #fff;
 
 
-//   &__inner {
-//     display: flex;
-//     justify-content: space-between;
-//     box-sizing: border-box;
-//     max-width: 1280px;
-//     margin: 16px auto;
-//     padding: 0 60px;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+
+    @media (min-width: $screen-xs) {
+      justify-content: space-between;
+      width: 320px;
+      padding: 0 30px;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 768px;
+      padding: 0 40px;
+    }
+
+    // // Нет макета
+    // @media (min-width: $screen-md) {
+    //   width: 992px;
+    // }
+
+    @media (min-width: $screen-lg) {
+      width: 1280px;
+      height: 50px;
+      padding: 0 60px;
+    }
+  }
+
+  * a {
+    display: flex;
+    align-self: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $gray-dark;
+    font-weight: bold;
+  }
+
+  * p {
+    display: flex;
+    margin-right:auto;
+    margin-left: 30px;
+    color: $gray;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
 
 
+  &__burger {
+    display: none;
 
-// //     @media (max-width: $screen-sm) {
-// //       max-width: $screen-sm;
-// //       padding: 0 30px;
-// //     }
+// появляется в телефоне и перемещается вправо
+    @media (max-width: $screen-sm) {
+      display: block;
+    }
+  }
+    // &__line {
+    //   линии бургера. или сделать иконку
+    https://codepen.io/diogo405/pen/JzBJam - меню
+    // }
 
+  &__phone {
+    // display: block;
+    padding: 20px 20px;
+    margin-right: 20px;
 
-// //     @media (min-width: $screen-xs) and (max-width: $screen-lg) {
-// //       padding: 0 10px;
-// //     }
-// //   }
+// пропадает в телефоне
+    // @media (max-width: $screen-xs) {
+    //   display: none;
+    // }
+  }
 
-
-//   &__left {
-//     display: flex;
-//   }
-
-
-// //   &__working-hours {
-// //     margin-left: 30px;
-// //     font-size: $font-size;
-// //     color: $gray;
-
-
-// //     @media (max-width: $screen-sm) {
-// //     }
-
-
-// //     @media (min-width: $screen-xs) and (max-width: $screen-lg) {
-// //       display: none;
-// //     }
-// //   }
-
-
-
-//   &__right {
-//     position: relative;
-//     display: flex;
-//   }
-
-
-// //   &__toggle {
-// //     position: absolute;
-// //     width: 20px;
-// //     height: 14px;
-// //     right: 0;
-// //     top: 0;
-// //     bottom: 0;
-// //     margin: auto;
-// //     display: flex;
-// //     flex-direction: column;
-// //     justify-content: space-between;
-// //     background-color: transparent;
-// //     border: none;
-// //     cursor: pointer;
-// //     z-index: 100;
-
-
-
-// //     @media (min-width: $screen-sm) {
-// //       display: none;
-// //     }
-// //   }
-
-
-
-// //   &__burgerline {
-// //     display: block;
-// //     width: 20px;
-// //     height: 2px;
-// //     background-color: #000;
-// //   }
-
-
-// //   &__cross {
-// //     position: absolute;
-// //     display: none;
-// //     width: 20px;
-// //     height: 14px;
-// //     right: 0;
-// //     top: 0;
-// //     bottom: 0;
-// //     margin: auto;
-// //     // display: flex;
-// //     flex-direction: column;
-// //     justify-content: space-between;
-// //     border: none;
-// //     cursor: pointer;
-// //   }
-
-
-// //   &__crossline {
-// //     position: relative;
-// //     display: none;
-// //     width: 20px;
-// //     height: 2px;
-// //     background-color: #000;
-
-
-// //     &:first-child {
-// //       transform: rotate(45deg);
-// //       margin-top: 5px;
-// //       top: 1px;
-// //     }
-
-
-// //     &:last-child {
-// //       transform: rotate(-45deg);
-// //       margin-bottom: 5px;
-// //       bottom: 1px;
-// //     }
-// //   }
-
-
-// //   &__icons {
-// //     margin-right: 15px;
-// //   }
-
-// //   &__icons-link {
-
-// //     &--phone {
-// //       margin-right: 10px;
-
-
-// //       @media (min-width: $screen-xs) and (max-width: $screen-lg) {
-// //         display: none;
-// //       }
-// //     }
-
-
-// //     &--basket {
-// //       margin-right: 15px;
-// //     }
-// //   }
-
-
-// //   &__phone-img {
-// //     padding-bottom: 3px;
-
-
-
-// //     @media (max-width: $screen-xs) {
-// //       display: none;
-// //     }
-// //   }
-// // }
+  &__cart {
+    color: $gray-dark;
+    margin-left: 80px;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+}

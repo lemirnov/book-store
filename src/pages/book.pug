@@ -8,14 +8,35 @@ block meta
   meta(name='description', content='')
 
 block content
-  //- +mixin book-card(name, url1, url2, url3, imgUrl, autor, descr, numberart, numberstock, namepubl, price, description)
-  .book-block
-    +book-card('Суперпотребители', url1, url2, url3, imgUrl, 'Эдди Юн', 'Кто это и почему они так важны для вашего бизнеса', '1090763', '5', 'Издал', '800 р', 'В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.')
+  include ../blocks/book-block/book-block.pug
 
-  .book-recomendation
-    if title === book
-      //- include ../book-recomend.pug
+  include ../blocks/book-recomend/book-recomend.pug
+
+  include ../blocks/biblio/biblio.pug
+
+  //- +mixin book-card НЕ ЗАБЫТЬ ПЕРЕПИСАТЬ НЕ МИКСИНОМ А ПРОСТО PUG... или все таки миксин? или инклюд и функция?
+  //- .book-block
+  //-   +book-card('Суперпотребители', url1, url2, url3, imgUrl, 'Эдди Юн', 'Кто это и почему они так важны для вашего бизнеса', '1090763', '5', 'Издал', '800 р', 'В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.')
+
+    //- кнопка написанная на уроке! сделать примисью с изменением параметров ссылка и цифра
+  //- button.social-btn(type='button')
+  //-   svg(widht='16', height='16')
+  //-     use(xlink:href='img/sprite.svg#facebook')
+  //-   span.social-btn_num 1
+  //-     button.social-btn(type='button')
+  //-   svg(widht='16', height='16')
+  //-     use(xlink:href='img/sprite.svg#vk')
+  //-   span.social-btn_num 12
+  //-     button.social-btn(type='button')
+  //-   svg(widht='16', height='16')
+  //-     use(xlink:href='img/sprite.svg#like')
+  //-   span.social-btn_num 15
+  //-     button.social-btn(type='button')
+  //-   svg(widht='16', height='16')
+  //-     use(xlink:href='img/sprite.svg#dislike')
+  //-   span.social-btn_num 20
+
+  //- .book-recomendation
+  //-   if title === book
+
       +book-recomend('Книги по тематике ', 'Больше книг по тематике')
-
-  .biblio
-    include ../blocks/biblio/biblio.pug

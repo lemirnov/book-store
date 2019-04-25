@@ -22,9 +22,23 @@ const replace = require('gulp-replace');
 const ghPages = require('gh-pages');
 const path = require('path');
 const responsive = require('gulp-responsive');
+const rename = require('gulp-rename');
+const svgstore = require('gulp-svgstore');
+const svgmin = require('gulp-svgmin');
+
+function generateSvgSprites() {
+  return src(dir.src + 'img/sprite-svg/*.svg')
+    .pipe(svgmin(function () {
+      return { plugins: [{ cleanupIDs: { minify: true } }] }
+    }))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite.svg'))
+    .pipe(dest(dir.build + 'img/'));
+}
+exports.generateSvgSprites = generateSvgSprites
 
 function imagesConvertToJPG() {
-  return src('src/img/booksall/*.png')
+  return src('src/img/books/*.png')
     .pipe(responsive({
       '*.png': {},
     },{
@@ -32,12 +46,12 @@ function imagesConvertToJPG() {
       quality: 75,
       progressive: true,
     }))
-    .pipe(dest('src/img/booksall/'));
+    .pipe(dest('src/img/books/'));
 }
 exports.imagesConvertToJPG = imagesConvertToJPG;
 
 function imagesConvertToWebp() {
-  return src('src/img/booksall/*.png')
+  return src('src/img/books/*.png')
     .pipe(responsive({
       '*.png': {},
     },{
@@ -45,7 +59,7 @@ function imagesConvertToWebp() {
       quality: 75,
       progressive: true,
     }))
-    .pipe(dest('src/img/booksall/'));
+    .pipe(dest('src/img/books/'));
 }
 exports.imagesConvertToWebp = imagesConvertToWebp;
 
@@ -70,11 +84,6 @@ function compilePug() {
     .pipe(dest(dir.build));
 }
 exports.compilePug = compilePug;
-
-function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), './build'), cb);
-}
-exports.deploy = deploy;
 
 function compileStyles() {
   return src(dir.src + 'scss/style.scss')
@@ -121,8 +130,8 @@ function copyJsVendors() {
 }
 
 function copyImages() {
-  return src(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}')
-    .pipe(dest(dir.build + 'img/'));
+  return src(dir.src + 'img/books/*.{jpg,jpeg,png,svg,webp,gif}')
+    .pipe(dest(dir.build + 'img/books/'));
 }
 exports.copyImages = copyImages;
 
@@ -137,32 +146,39 @@ function clean() {
 }
 exports.clean = clean;
 
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
+
 function serve() {
   browserSync.init({
     server: dir.build,
     startPath: 'index.html',
-    open: false,
+    open: true,
     port: 8080,
   });
   watch([
     dir.src + 'scss/*.scss',
-    dir.src + 'scss/blocks/*.scss',
+    dir.src + 'blocks/**/*.scss',
   ], compileStyles);
   watch([
     dir.src + 'pages/*.pug',
     dir.src + 'pug/*.pug',
+    dir.src + 'blocks/**/*.pug',
   ], compilePug);
   watch(dir.src + 'js/*.js', processJs);
-  watch(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}', copyImages);
+  watch(dir.src + 'img/sprite-svg/*.svg', generateSvgSprites);
+  watch(dir.src + 'img/**/*.{jpg,jpeg,png,svg,webp,gif}', copyImages);
   watch([
     dir.build + '*.html',
-    dir.build + 'js/*.js',
-    dir.build + 'img/*.{jpg,jpeg,png,svg,webp,gif}',
+    dir.build + 'js/**/*.js',
+    dir.build + 'img/**/*.{jpg,jpeg,png,svg,webp,gif}',
   ]).on('change', browserSync.reload);
 }
 
 exports.default = series(
   clean,
-  parallel(compileStyles, compilePug, processJs, copyJsVendors, copyImages, copyFonts),
+  parallel(compileStyles, compilePug, generateSvgSprites, processJs, copyJsVendors, copyImages, copyFonts),
   serve
 );

@@ -6,37 +6,38 @@ block meta
 
 block content
   h1 Наши рекомендации
-  .recomend
-    .recomend__blog
-      h3 Новая статья в блоге
-      p Посмотрите, как чтение книг меняет восприятие человека
-      a(href='') Читать статью
-    .recomend__photo
-      a.recomend__photo(href='')
-        img(src='', alt='')
-        h2 Наши подборки ваших лучших фотографий у нас
-    .recomend__bookautumn
-      a.recomend__photo(href='')
-        img(src='', alt='')
-        h2 Книга осени
-        p Проголосуй за лучшую книгу этой осени
-    .recomend__pool
-      h3 Нам важно ваше мнение
-      p Ставьте пальцы вверх, мы хотим знать ваше мнение
-      button.btn Проголосовать
-    .recomend__kids
-      a.recomend__photo(href='')
-        h3 Книги для детей
-        p У нас появился новый раздел, в котором мы подбираем книги для юных читателей
-    .recomend__oldbooks
-      a.recomend__photo(href='')
-        img(src='', alt='')
-        h3 У вас есть старые книги?
-        p Приносите их нам и обменивайте на новые
-  .book__gift
-    h3 Книга в подарок!
-    p При вашем новом заказе мы подарим вам книгу
-    +mini-card('Путеводитель по лжи', 'book.html', 'img/books/book-putevoditel-po-lzhi.jpg', 'Критическое мышление в эпоху постправды', '500 p')
+  include ../blocks/recomend-blog/recomend-blog.pug
+  //- .recomend
+  //-   .recomend__blog
+  //-     h3 Новая статья в блоге
+  //-     p Посмотрите, как чтение книг меняет восприятие человека
+  //-     a(href='') Читать статью
+  //-   .recomend__photo
+  //-     a.recomend__photo(href='')
+  //-       img(src='', alt='')
+  //-       h2 Наши подборки ваших лучших фотографий у нас
+  //-   .recomend__bookautumn
+  //-     a.recomend__photo(href='')
+  //-       img(src='', alt='')
+  //-       h2 Книга осени
+  //-       p Проголосуй за лучшую книгу этой осени
+  //-   .recomend__pool
+  //-     h3 Нам важно ваше мнение
+  //-     p Ставьте пальцы вверх, мы хотим знать ваше мнение
+  //-     button.btn Проголосовать
+  //-   .recomend__kids
+  //-     a.recomend__photo(href='')
+  //-       h3 Книги для детей
+  //-       p У нас появился новый раздел, в котором мы подбираем книги для юных читателей
+  //-   .recomend__oldbooks
+  //-     a.recomend__photo(href='')
+  //-       img(src='', alt='')
+  //-       h3 У вас есть старые книги?
+  //-       p Приносите их нам и обменивайте на новые
+  //- .book__gift
+  //-   h3 Книга в подарок!
+  //-   p При вашем новом заказе мы подарим вам книгу
+  //-   +mini-card('Путеводитель по лжи', 'book.html', 'img/books/book-putevoditel-po-lzhi.jpg', 'Критическое мышление в эпоху постправды', '500 p')
 
   .biblio
     include ../blocks/biblio/biblio.pug

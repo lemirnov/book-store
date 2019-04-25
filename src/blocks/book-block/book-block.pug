@@ -1,0 +1,54 @@
+.book-block
+  .book-block__images
+    .preview
+
+      img.preview__screen(src='img/books/screen1.jpg', alt='/')
+      img.preview__screen(src='img/books/screen2.jpg', alt='/')
+      img.preview__screen(src='img/books/screen3.jpg', alt='/')
+    .book__img
+        img.book__img-cover(src='img/books/superpotrebiteli.jpg', alt='Суперпотребители')
+    .book-block__header
+      p.book__info-author Эдди Юн
+      h2.book__info-name Суперпотребители
+      p.book__info-preview Кто это и почему они так важны для вашего бизнеса
+  .book-block__info
+    table.book__table
+      tr
+        td.book__table-key Артикул:
+        td.book__table-val 1830720
+      tr
+        td.book__table-key В наличии:
+        td.book__table-val 5 шт.
+      tr
+        td.book__table-key Издательство:
+        td.book__table-val МИФ
+      tr
+        td.book__table-key Цена:
+        td.book__table-val 800 р.
+    a.btn Добавить в корзину
+    .book__like
+      button.btn__heart
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#heart')
+      p.book__like-text 20 людям понравилась эта книга
+  .book-block__desc
+    h2.book__desc-title Короткое описание
+    p.book__desc-text В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах.
+    a.book__desc-link(href="index.html") Показать полностью
+    .book__desc-like
+      button.social__btn(type='button')
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#facebook')
+      span.social__btn__num 3
+      button.social__btn(type='button')
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#vk')
+      span.social__btn__num 8
+      button.social__btn(type='button')
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#like')
+      span.social__btn__num 13
+      button.social__btn(type='button')
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#dislike')
+      span.social__btn__num 4

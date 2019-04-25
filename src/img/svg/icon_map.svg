@@ -1,0 +1,19 @@
+<svg id="icon_map" xmlns="http://www.w3.org/2000/svg" width="54" height="49" viewBox="0 0 54 49">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #d7569c;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <path id="Эллипс_2_копия" data-name="Эллипс 2 копия" class="cls-1" d="M1351,2512a12,12,0,0,1,12,12c0,6.63-10.99,20.88-11,21,0,0.02-13-14.37-13-21A12,12,0,0,1,1351,2512Zm0,7a5,5,0,1,1-5,5A5,5,0,0,1,1351,2519Zm31-21a8.869,8.869,0,0,1,9,8.73c0,4.82-8.25,15.18-8.25,15.27,0,0.01-9.75-10.45-9.75-15.27A8.869,8.869,0,0,1,1382,2498Zm0.25,7.09a2,2,0,1,1-2,2A2.006,2.006,0,0,1,1382.25,2505.09Z" transform="translate(-1338 -2497)"/>
+  <path id="Фигура_4" data-name="Фигура 4" class="cls-2" d="M1358,2542h22s8,1.54,8-5c0-6.66-9-5-9-5h-5s-6,.63-6-5c0-6.2,6-6,6-6h2" transform="translate(-1338 -2497)"/>
+</svg>

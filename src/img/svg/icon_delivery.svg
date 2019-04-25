@@ -1,0 +1,30 @@
+<svg id="icon_delivery" xmlns="http://www.w3.org/2000/svg" width="69" height="37" viewBox="0 0 69 37">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #d7569c;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #e8e8e8;
+      }
+
+      .cls-4 {
+        fill: #d7569c;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_3" data-name="Фигура 3" class="cls-1" d="M1040,2504h9v-8h34v30h-34v-8h-8" transform="translate(-1032 -2495)"/>
+  <path id="Прямоугольник_7" data-name="Прямоугольник 7" class="cls-2" d="M49,6h9A10,10,0,0,1,68,16V31a0,0,0,0,1,0,0H49a0,0,0,0,1,0,0V6A0,0,0,0,1,49,6Z"/>
+  <path id="Эллипс_1" data-name="Эллипс 1" class="cls-3" d="M1060,2521a5,5,0,1,1-5,5A5,5,0,0,1,1060,2521Zm31,0a5,5,0,1,1-5,5A5,5,0,0,1,1091,2521Z" transform="translate(-1032 -2495)"/>
+  <path id="Прямоугольник_9" data-name="Прямоугольник 9" class="cls-4" d="M1063.17,2506.17a1.008,1.008,0,0,1,1.42,0l4.24,4.24a1,1,0,0,1-1.42,1.42l-4.24-4.24A1.008,1.008,0,0,1,1063.17,2506.17Zm5.66,4a1.008,1.008,0,0,1,0,1.42l-4.24,4.24a1,1,0,0,1-1.42-1.42l4.24-4.24A1.008,1.008,0,0,1,1068.83,2510.17ZM1034,2510h33a1,1,0,0,1,0,2h-33A1,1,0,0,1,1034,2510Z" transform="translate(-1032 -2495)"/>
+</svg>

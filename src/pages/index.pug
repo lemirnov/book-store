@@ -5,77 +5,47 @@ block meta
   meta(name='description', content='')
 
 block content
-  //- из урока, удалить потом отсюда и btn.scss или использовать - btn использовал в миксине для бук
-  //- input.btn(type='button', value='input')
-  //- button.btn cnope
-  //- a.btn(href='/') link
-  .slider
-    .slider__item
-      +slider('Новое поступление книги "Симпсоны и их математические секреты"', 'Для поклонников сериала "Симпсоны" и для всех кому интересна математика.', 'Хочу узнать о книге больше', 'img/books_all/simpsony-i-ikh-matematicheskie-sekrety.png')
-    .slider__item
-      +slider('Новое поступление книги "45 татуировок менеджера"', 'Книга про правила российского руководителя', 'Хочу узнать больше о книге', 'img/books_all/45-tatuirovok-prodavana.png')
-    .slider__item
-      +slider('Узнайте как обучить персонал с новой книгой "Пятая дисциплина"', 'Искусство и практика обучающейся организации', 'Хочу узнать больше о книге', 'img/books_all/pyataya-distsiplina.png')
-    .arrow
-      a.arrowprew(href='')
-      a.arrownext(href='')
+  include ../blocks/slider/slider.pug
 
-  .tabs
-    ul.tabs__links
-      li.tabs__link-wrap.tabs__link-wrap--active
-        a.tabs__link(href='', alt='') Все
-      li.tabs__link-wrap
-        a.tabs__link(href='#marketing', alt='') Маркетинг
-      li.tabs__link-wrap
-        a.tabs__link(href='', alt='') Научпоп
-      li.tabs__link-wrap
-        a.tabs__link(href='', alt='') Бизнес
-      li.tabs__link-wrap
-        a.tabs__link(href='', alt='') Творчество
-      li.tabs__link-wrap
-        a.tabs__link(href='', alt='') Бизнес
+  include ../blocks/tabs/tabs.pug
 
-    .tabs__contant-item
-      +mini-card('Латеральная логика', 'book.html', 'img/books/book-lateralnaya-logika.jpg', 'Головоломный путь к нестандартному решению', '500p')
+  include ../blocks/tabs-contant/tabs-contant.pug
 
-    .tabs__content-item#marketing
-      +mini-card('Путеводитель по лжи', 'book.html', 'img/books/book-putevoditel-po-lzhi.jpg', 'Критическое мышление в эпоху постправды', '500 p')
+  include ../blocks/pagination/pagination.pug
 
-    .tabs__content-item
-      +mini-card('Дао физики', 'book.html', 'img/books/book-dao-fiziki.jpg', 'Исследование параллелей между современной физикой и восточной философией', '500 p')
+  include ../blocks/delivery/delivery.pug
 
-    .tabs__content-item
-      +mini-card('Не очевидно', 'book.html', 'img/books/book-ne-ochevidno.jpg', 'Как выявлять тренды раньше других', '500 p')
+  include ../blocks/book-recomend/book-recomend.pug
 
-    .pagination
-      span.pagination__item(href='...') 1
-      a.pagination__item(href='...') 2
-      a.pagination__item(href='...') 3
-      a.pagination__item(href='...') 4
-      a.pagination__item(href='...') 5
-      span.pagination__item ...
-      a.pagination__item(href='...') 10
+  //-   .pagination
+  //-     span.pagination__item(href='...') 1
+  //-     a.pagination__item(href='...') 2
+  //-     a.pagination__item(href='...') 3
+  //-     a.pagination__item(href='...') 4
+  //-     a.pagination__item(href='...') 5
+  //-     span.pagination__item ...
+  //-     a.pagination__item(href='...') 10
 
-  .delivery
-      h2 Доставим в любое место
-      p //ну почти в любое
+  //- .delivery
+  //-     h2 Доставим в любое место
+  //-     p //ну почти в любое
 
-      .delivery__block
-        .delivery__block-item
-          img(src='', alt='')
-          p Покупайте книги на сайте в любом формате - бумажные, электронные или аудио.
+  //-     .delivery__block
+  //-       .delivery__block-item
+  //-         img(src='', alt='')
+  //-         p Покупайте книги на сайте в любом формате - бумажные, электронные или аудио.
 
-        .delivery__block-item
-          img(src='', alt='')
-          p Мы подарим вам "Набор читателя" и добавим в посылку.
+  //-       .delivery__block-item
+  //-         img(src='', alt='')
+  //-         p Мы подарим вам "Набор читателя" и добавим в посылку.
 
-        .delivery__block-item
-          img(src='', alt='')
-          p Бесплатно доставляем заказы от 3000 рублей по всей России.
+  //-       .delivery__block-item
+  //-         img(src='', alt='')
+  //-         p Бесплатно доставляем заказы от 3000 рублей по всей России.
 
-        .delivery__block-item
-          img(src='', alt='')
-          p Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу бесплатно
+  //-       .delivery__block-item
+  //-         img(src='', alt='')
+  //-         p Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу бесплатно
 
-  .book-recomend
-    +book-recomend('Наши новинки', 'Все новинки')
+  //- .book-recomend
+  //-   +book-recomend('Наши новинки', 'Все новинки')

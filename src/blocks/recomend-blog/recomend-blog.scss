@@ -1,0 +1,78 @@
+.recommend {
+  background-color: $gray-lightest;
+  max-width: 100%;
+  margin: 0, auto;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-template-areas:
+    "title title title title"
+    "blog book book present"
+    "photo book book present"
+    "photo opinion kids present"
+    "oldbook oldbook oldbook present";
+
+  // @media (min-width: $screen-lg) {
+  //   width: 1280px;
+  //   height: 50px;
+  //   padding: 0 60px;
+  // }
+
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__blog {
+    grid-area: blog;
+    background-color: $absolutely-white;
+    padding: 0 20px;
+  }
+
+  &__book {
+    grid-area: book;
+    background-image: url(../../img/books/recomend1.jpg);
+    background-size: 100%;
+    color: $absolutely-white;
+    padding: 0 20px;
+  }
+
+  &__photo {
+    grid-area: photo;
+    background-image: url(../../img/books/recomend2.jpg);
+    background-size: 100%;
+    color: $absolutely-white;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  &__opinion {
+    grid-area: opinion;
+    background-color: $absolutely-white;
+    padding: 0 20px;
+  }
+
+  &__kids {
+    grid-area: kids;
+    background-color: $main-color;
+    color: $absolutely-white;
+    padding: 0 20px;
+  }
+
+  &__oldbook {
+    grid-area: oldbook;
+    text-align: center;
+    background-image: url(../../img/books/recomend3.jpg);
+    color: $absolutely-white;
+    background-size: 100%;
+  }
+
+  &__present {
+    grid-area: present;
+  }
+
+  // +свойства миксина
+}
+
+

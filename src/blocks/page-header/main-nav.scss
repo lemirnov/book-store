@@ -1,0 +1,36 @@
+.main-nav {
+  margin-right: 80px;
+
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+
+
+  }
+
+  &__item {
+    display: flex;
+    align-content: flex-end;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 0 10px;
+    color: $gray-dark;
+  }
+
+  &__item a {
+    display: flex;
+    align-content: flex-end;
+    color: $gray-dark;
+    text-transform: lowercase;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+
+  &__item a:hover {
+        display: flex;
+        color: $main-color;
+  }
+}

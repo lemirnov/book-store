@@ -1,5 +1,7 @@
 $main-color:          #d7569c;
 $danger-color:        #d90000;
+$light-color:         #f4d4e4;
+$absolutely-white:    #ffffff;
 
 $gray-lightest:       #f5f5f5;
 $gray-lighten:        #e8e8e8;
@@ -10,6 +12,7 @@ $gray-dark:           #231f20;
 $text-color:          #000000;
 $link-color:          #1a1ff7;
 $link-color-hover:    #6c73ff;
+$pink:                #f4d4e4;
 
 $font-family:         -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 $font-size-xl:        36px;
@@ -25,3 +28,9 @@ $screen-md:           992px;
 $screen-lg:           1280px;
 
 $border-radius:       2px;
+
+// a {
+//   text-decoration: none;
+// }
+
+$indent:              40px;

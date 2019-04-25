@@ -1,5 +1,23 @@
-// .biblio {
+.biblio {
+  width: 100%;
+  height: 310px;
+  background-image: url(../../img/books/biblio.jpg);
+  background-position: center;
 
+  &__shape {
+    // display:block;
+    margin: auto;
+    padding: 70px, 40px;
+  }
 
-// }
-// еще не дописан
+  &__header {
+    // margin: 0;
+    text-align: center;
+    color: $gray-lightest;
+  }
+
+  &__descr {
+    text-align: center;
+    color: $gray-lightest;
+  }
+}

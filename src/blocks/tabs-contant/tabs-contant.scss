@@ -1,0 +1,27 @@
+.tabs-contant {
+
+  &__item {
+    display: flex;
+  }
+
+  &__block {
+    margin: auto;
+    display: grid;
+    grid-row-gap: 60px;
+
+    @media (min-width: $screen-sm) {
+      max-width: 640px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 40px;
+      grid-row-gap: 60px;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 80px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "bookStore",
+  "name": "book",
   "version": "1.0.0",
   "description": "Start project.",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "gulp",
     "lint-staged": "lint-staged"
   },
-  "author": "Lemirnov",
+  "author": "lemirnov",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.0.2",
     "bemlint": "^1.6.1",
-    "browser-sync": "^2.14.0",
+    "browser-sync": "^2.26.5",
+    "concurrently": "^4.1.0",
     "del": "^4.0.0",
     "gh-pages": "^2.0.1",
     "glob-exec": "^0.1.1",
@@ -51,6 +52,10 @@
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "dependencies": {
+    "gulp-rename": "^1.4.0",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^7.0.1",
+    "package": "^1.0.1",
     "svg4everybody": "^2.1.9"
   },
   "husky": {

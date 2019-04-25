@@ -1,13 +1,29 @@
 @import 'variables';
 @import 'mixins';
 
-@import '../blocks/page/page';
+@import '../blocks/page';
+@import '../blocks/book';
 @import '../blocks/page-header/page-header';
-@import '../blocks/page-footer/page-footer';
-@import '../blocks/btn/btn';
+@import '../blocks/page-header/main-nav';
+@import '../blocks/page-header/nav';
 @import '../blocks/slider/slider';
+// @import '../blocks/slider/arrow';
+@import '../blocks/tabs/tabs';
+@import '../blocks/tabs-contant/tabs-contant';
+@import '../blocks/pagination/pagination';
+@import '../blocks/delivery/delivery';
+@import '../blocks/book-recomend/book-recomend';
+@import '../blocks/book-block/book-block';
+@import '../blocks/biblio/biblio';
+@import '../blocks/recomend-blog/recomend-blog';
+@import '../blocks/contacts/contacts';
+@import '../blocks/map/map';
+@import '../blocks/page-footer/page-footer';
+@import '../blocks/page-footer/main-nav__footer';
+
+
+@import '../blocks/btn/btn';
 @import '../blocks/form/form';
 @import '../blocks/field-text/field-text';
 @import '../blocks/field-checkbox/field-checkbox';
 @import '../blocks/field-action/field-action';
-@import '../blocks/arrow/arrow';

@@ -1,26 +1,53 @@
 $main-color:          #d7569c;
-$danger-color:        #d90000;
-$light-color:         #f4d4e4;
+$pink:                #f4d4e4;
 $absolutely-white:    #ffffff;
 
+$danger-color:        #d90000;
+$white-color:         #ffffff;
+$black-color:         #000000;
+
+// светло розовый
+$pink-base:           #f4d4e4;
+$pink-light:          #f4cee1;
+$pink-bright:         #ef529f;
+$pink-brighter:       #ef56a1;
+// активная кнопка
+$pink-dark:           #d7569c;
+$pink-dark-x:         #ce6194;
+$pink-darker:         #d72384;
+
+$gray-base:           #828282;
+// основной светлый фон
 $gray-lightest:       #f5f5f5;
 $gray-lighten:        #e8e8e8;
 $gray-light:          #d0d0d0;
+// темно серый
 $gray:                #a6a6a6;
 $gray-dark:           #231f20;
+$gray-dark-s:         #dddddd;
+$gray-dark-md:        #3c3c3c;
 
 $text-color:          #000000;
 $link-color:          #1a1ff7;
 $link-color-hover:    #6c73ff;
-$pink:                #f4d4e4;
 
-$font-family:         -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+$font-family:         Montserrat, sans-serif;
+$font-size-xxl:       40px;
 $font-size-xl:        36px;
 $font-size-lg:        30px;
 $font-size-md:        24px;
+// $font-size-x:         18px;
 $font-size:           16px;
 $font-size-sm:        14px;
-$line-height:         1.4;
+
+$line-height:         24px;
+$line-height-md:      30px;
+// $line-height-md-x:    40px;
+$line-height-lg:      50px;
+
+$font-weight:         400;
+$font-weight-md:      600;
+$font-weight-bd:      700;
 
 $screen-xs:           320px;
 $screen-sm:           768px;
@@ -28,9 +55,5 @@ $screen-md:           992px;
 $screen-lg:           1280px;
 
 $border-radius:       2px;
-
-// a {
-//   text-decoration: none;
-// }
 
 $indent:              40px;

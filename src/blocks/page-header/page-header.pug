@@ -1,22 +1,24 @@
 header.page-header
   .page-header__inner
-    a.logo(href='/') BOOK STORE
-    p.opentime с 9:00 до 19:00
-    nav.main-nav
-      ul.main-nav__list
-        li.main-nav__item
-          a(href='book.html') книги
-        li.main-nav__item.main-nav__item--active
-          a(href='recomendation.html') рекомендации
-        li.main-nav__item
-          a(href='contacts.html') контакты
-    burger.burger(aria-label='Показать меню')
-      span.line
-      span.line
-      span.line
-    a.cart(href='/')
-      svg(width='20', height='20')
-        use(xlink:href='img/sprite.svg#cart')
-    a.phone(href='tel:+78005008020')
-      svg(width='20', height='20')
-        use(xlink:href='img/sprite.svg#phone')
+    .page-header__logoblock
+      a.page-header__logo(href='/') BOOK STORE
+      p.page-header__opentime с 9:00 до 19:00
+    .page-header__mainblock
+      nav.main-navheader
+        ul.main-navheader__list
+          li.main-navheader__item
+            a(href='book.html') книги
+          li.main-navheader__item
+            a(href='recomendation.html') рекомендации
+          li.main-navheader__item
+            a(href='contacts.html') контакты
+      burger.page-header__burger(aria-label='Показать меню')
+        span.page-header__burgerline
+        span.page-header__burgerline
+        span.page-header__burgerline
+      a.page-header__cart(href='/')
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#cart')
+      a.page-header__phone(href='tel:+78005008020')
+        svg(width='20', height='20')
+          use(xlink:href='img/sprite.svg#phone')

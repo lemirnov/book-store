@@ -1,5 +1,5 @@
 //- Стандартный шаблон страницы
-include mixins.pug
+include ../blocks/mixins/mixins.pug
 
 doctype html
 html(class='page  no-js', lang='ru')
@@ -20,16 +20,14 @@ html(class='page  no-js', lang='ru')
     noscript У вас отключен JavaScript. Это пугает.
 
     .page__inner
-      .page__content
+      include ../blocks/page-header/page-header.pug
 
-        include ../blocks/page-header/page-header.pug
-
-        block content
-          p Cодержимое
+    .page__content
+      block content
+        p Cодержимое
 
     .page__footer-wrapper
-        include ../blocks/page-footer/page-footer.pug
-
+      include ../blocks/page-footer/page-footer.pug
 
     block page-bottom
       script(src='js/vendors.min.js')

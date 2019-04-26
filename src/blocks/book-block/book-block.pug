@@ -1,41 +1,40 @@
 .book-block
   .book-block__images
-    .preview
-
-      img.preview__screen(src='img/books/screen1.jpg', alt='/')
-      img.preview__screen(src='img/books/screen2.jpg', alt='/')
-      img.preview__screen(src='img/books/screen3.jpg', alt='/')
-    .book__img
-        img.book__img-cover(src='img/books/superpotrebiteli.jpg', alt='Суперпотребители')
+    .book-block__preview
+      img.book-block__preview(src='img/books/screen1.jpg', alt='/')
+      img.book-block__preview(src='img/books/screen2.jpg', alt='/')
+      img.book-block__preview(src='img/books/screen3.jpg', alt='/')
+    .book-block__img
+        img.book-block__img-cover(src='img/books/superpotrebiteli.jpg', alt='Суперпотребители')
     .book-block__header
-      p.book__info-author Эдди Юн
-      h2.book__info-name Суперпотребители
-      p.book__info-preview Кто это и почему они так важны для вашего бизнеса
+      p.book-block__info-author Эдди Юн
+      h2.book-block__info-name Суперпотребители
+      p.book-block__info-preview Кто это и почему они так важны для вашего бизнеса
   .book-block__info
-    table.book__table
+    table.book-block__table
       tr
-        td.book__table-key Артикул:
-        td.book__table-val 1830720
+        td.book-block__table-key Артикул:
+        td.book-block__table-val 1830720
       tr
-        td.book__table-key В наличии:
-        td.book__table-val 5 шт.
+        td.book-block__table-key В наличии:
+        td.book-block__table-val 5 шт.
       tr
-        td.book__table-key Издательство:
-        td.book__table-val МИФ
+        td.book-block__table-key Издательство:
+        td.book-block__table-val МИФ
       tr
-        td.book__table-key Цена:
-        td.book__table-val 800 р.
+        td.book-block__table-key Цена:
+        td.book-block__table-val 800 р.
     a.btn Добавить в корзину
-    .book__like
+    .book-block__like
       button.btn__heart
         svg(width='20', height='20')
           use(xlink:href='img/sprite.svg#heart')
       p.book__like-text 20 людям понравилась эта книга
   .book-block__desc
-    h2.book__desc-title Короткое описание
-    p.book__desc-text В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах.
-    a.book__desc-link(href="index.html") Показать полностью
-    .book__desc-like
+    h2.book-block__desc-title Короткое описание
+    p.book-block__desc-text В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах.
+    a.book-block__desc-link(href="index.html") Показать полностью
+    .book-block__desc-like
       button.social__btn(type='button')
         svg(width='20', height='20')
           use(xlink:href='img/sprite.svg#facebook')

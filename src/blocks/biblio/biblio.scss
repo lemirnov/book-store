@@ -4,20 +4,68 @@
   background-image: url(../../img/books/biblio.jpg);
   background-position: center;
 
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: inherit;
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      // z-index: 3;
+      width: 70px;
+      height: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 0 10px;
+    }
+  }
+
   &__shape {
-    // display:block;
-    margin: auto;
-    padding: 70px, 40px;
+    width: 100px;
+    height: 10px;
+    // margin: auto;
+    margin: 70px auto 0;
+    // z-index: 999;
+
+    // @media (min-width: $screen-sm) {
+    //   margin-top: 70px;
+    // }
   }
 
   &__header {
-    // margin: 0;
+    position: relative;
+    // z-index: 3;
+    top: 113px;
+    margin: 0;
     text-align: center;
-    color: $gray-lightest;
+    font-size: $font-size-lg;
+    color: $white-color;
+
+    @media (min-width: $screen-xs) {
+      top: 80px;
+      font-size: $font-size-lg;
+      line-height: $line-height-md;
+    }
   }
 
   &__descr {
+    position: relative;
+    // z-index: 3;
+    top: 120px;
     text-align: center;
-    color: $gray-lightest;
+    font-size: $font-size;
+    color: $white-color;
+
+    @media (min-width: $screen-xs) {
+      top: 90px;
+      line-height: $line-height-md;
+    }
   }
 }

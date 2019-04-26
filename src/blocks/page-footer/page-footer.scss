@@ -1,51 +1,75 @@
 .page-footer {
-  display: block;
-  background-color: #fff;
+  width: 100%;
 
+/*   display: block; */
+  background-color: $white-color;
 
   &__inner {
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
+    justify-content: space-between;
+    // align-content: center;
+    box-sizing: border-box;
+    height: 50px;
+    max-width: 1280px;
+    padding: 0 60px;
     margin:0 auto;
 
-    @media (min-width: $screen-xs) {
-      justify-content: space-between;
-      width: 320px;
-      padding: 0 30px;
-    }
-
-    @media (min-width: $screen-sm) {
-      width: 768px;
+    @media (max-width: $screen-sm) {
+      max-width: 768px;
       padding: 0 40px;
     }
 
-    // // Нет макета
-    // @media (min-width: $screen-md) {
-    //   width: 992px;
-    // }
-
-    @media (min-width: $screen-lg) {
-      width: 1280px;
-      height: 50px;
-      padding: 0 60px;
+    @media (max-width: $screen-xs) {
+      // justify-content: space-between;
+      width: 320px;
+      padding: 0 30px;
     }
   }
 
-  * a {
+  &__logoblock {
     display: flex;
-    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    // display: flex;
+    // align-self: center;
+    font-size: $font-size;
+    font-weight: $font-weight-bd;
     text-decoration: none;
     color: $gray-dark;
     font-weight: bold;
+    margin-right: 30px;
   }
 
-  * p {
-    display: flex;
-    margin-right:auto;
-    margin-left: 30px;
+  &__opentime {
+    // margin-left: 30px;
     color: $gray;
+    font-size: $font-size-sm;
+    font-weight: $font-weight;
 
-    @media (max-width: $screen-sm) {
+    @media (min-width: $screen-xs) {
+      margin: 0;
+    }
+  }
+
+  &__mainblock {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  &__book {
+    // display: flex;
+    // align-items: center;
+    text-decoration: none;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-md;
+    text-transform: lowercase;
+
+    @media (min-width: $screen-sm) {
       display: none;
     }
   }

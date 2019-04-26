@@ -1,17 +1,19 @@
 .book-recomend {
   width: 100%;
+  margin-top: 120px;
   background: linear-gradient(to bottom, $gray-lightest 30%, $pink 30%, $pink 70%);
-  bottom: 0;
+  // bottom: 0;
 
   &__inner {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    max-width: 1280px;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    max-width: 1170px;
+    // box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 60px 80px 60px;
-    overflow-x: auto;
+    padding: 0 60px 50px 60px;
+    // overflow-x: auto;
 
     @media (max-width: $screen-sm) {
       max-width: $screen-sm;
@@ -26,7 +28,7 @@
 
   &__title {
     display: flex;
-    align-content: center;
+    // align-content: center;
     // text-align: left;
     text-decoration: none;
     margin: 0;
@@ -35,22 +37,24 @@
 
   &__link {
     display: flex;
-    align-content: center;
+    // align-content: center;
     // text-align: center;
     margin: 0;
     text-decoration: none;
+    color: $link-color;
   }
 
   &__block {
     width: 100%;
+    height: 600px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     // flex-direction: row;
     // flex-wrap: wrap;
     // margin-left: -15px;
     // margin-right: -15px;
     margin: 0 auto;
-
 
     @media (min-width: 1280px) {
       width: 1170px;

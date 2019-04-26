@@ -27,7 +27,8 @@
     position: relative;
     font-size: $font-size;
     // font-weight: $font-weight-bd;
-    color: $gray;
+    color: $black-color;
+    font-weight: bold;;
 
     &:before {
       content: '';
@@ -36,8 +37,8 @@
       bottom: -5px;
       z-index: -5;
       display: none;
-      color: #d7569c;
-      background-color: #d90000;
+      color: $pink;
+      background-color: $pink-base;
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -45,11 +46,11 @@
 
     &:hover:before {
       display: block;
-      color: #d90000;
+      color: $pink;
     }
 
     &:active {
-      color: $gray;
+      color: $pink;
     }
   }
 }

@@ -1,12 +1,16 @@
 footer.page-footer
   .page-footer__inner
-    a.logo(href='/') BOOK STORE
-    p.opentime с 9:00 до 19:00
-    nav.main-nav__footer
-      ul.main-nav__list
-        li.main-nav__item
-          a(href='book.html') книги
-        li.main-nav__item.main-nav__item--active
-          a(href='recomendation.html') рекомендации
-        li.main-nav__item
-          a(href='contacts.html') контакты
+    .page-footer__logoblock
+      a.page-footer__logo(href='/') BOOK STORE
+      p.page-footer__opentime с 9:00 до 19:00
+    .page-footer__mainblock
+      nav.main-navfooter
+        ul.main-navfooter__list
+          li.main-navfooter__item
+            a(href='book.html') книги
+          li.main-navfooter__item
+            a(href='recomendation.html') рекомендации
+          li.main-navfooter__item
+            a(href='contacts.html') контакты
+      .page-footer__book
+        a(href='book.html') книги

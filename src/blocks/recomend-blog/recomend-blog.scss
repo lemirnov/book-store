@@ -1,11 +1,12 @@
 .recommend {
   background-color: $gray-lightest;
-  max-width: 100%;
+  max-width: 1280px;
   margin: 0, auto;
   padding: 2%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  justify-content: center;
   grid-template-areas:
     "title title title title"
     "blog book book present"

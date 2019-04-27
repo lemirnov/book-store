@@ -1,0 +1,34 @@
+.mini-card {
+  width: 100%;
+
+  &:hover &__pict {
+    box-shadow: 0 0 10px 10px $pink-light;
+  }
+
+  &:hover &__price {
+    color: $main-color;
+  }
+
+  &__inner {
+
+  }
+
+  &__pict {
+    width: 263px;
+    height: 370px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $text-color;
+  }
+
+  &__descr {
+    color: $text-color;
+  }
+
+  &__price {
+    color: $text-color;
+    font-weight: $font-weight-bd;
+  }
+}

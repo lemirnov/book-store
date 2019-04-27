@@ -15,4 +15,4 @@ ex_files
 Thumbs.db
 __MACOSX/
 
-src/
+# src/

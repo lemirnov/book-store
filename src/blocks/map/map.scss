@@ -1,0 +1,14 @@
+.map {
+  width: 1280px;
+  height: 450px;
+  margin: 40px auto;
+
+  &__inner {
+
+    @media (min-width: $screen-lg) {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 60px;
+    }
+  }
+}

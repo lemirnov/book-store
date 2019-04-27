@@ -1,0 +1,45 @@
+.main-navfooter {
+  // margin-right: 80px;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    align-content: flex-end;
+    text-decoration: none;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-md;
+    text-transform: lowercase;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-right: 5px;
+    }
+  }
+
+  // &__item a {
+
+  // }
+
+  &__item a {
+    display: flex;
+    align-content: flex-end;
+    color: $gray-dark;
+    text-transform: lowercase;
+    margin-left: 15px;
+    text-decoration: none;
+
+    &__hover {
+      color: $link-color;
+    }
+  }
+}
